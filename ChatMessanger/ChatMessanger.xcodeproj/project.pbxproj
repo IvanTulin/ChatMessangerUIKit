@@ -7,23 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA0939A92C74C99E00F67EE3 /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0939A82C74C99E00F67EE3 /* AppButton.swift */; };
+		BA0939B22C74D28A00F67EE3 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0939B12C74D28A00F67EE3 /* RegistrationView.swift */; };
+		BA0939B42C74D2D300F67EE3 /* RegistrationViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0939B32C74D2D300F67EE3 /* RegistrationViewPresenter.swift */; };
+		BA0939B72C74DA2000F67EE3 /* WindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0939B62C74DA2000F67EE3 /* WindowManager.swift */; };
+		BA0939BC2C74DC6000F67EE3 /* NSNotification.Name + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0939BB2C74DC6000F67EE3 /* NSNotification.Name + Extension.swift */; };
 		BA44C30D2C74A82F0039181B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA44C30C2C74A82F0039181B /* AppDelegate.swift */; };
 		BA44C30F2C74A82F0039181B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA44C30E2C74A82F0039181B /* SceneDelegate.swift */; };
-		BA44C3112C74A82F0039181B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA44C3102C74A82F0039181B /* ViewController.swift */; };
-		BA44C3142C74A82F0039181B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA44C3122C74A82F0039181B /* Main.storyboard */; };
 		BA44C3162C74A8310039181B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA44C3152C74A8310039181B /* Assets.xcassets */; };
 		BA44C3192C74A8310039181B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA44C3172C74A8310039181B /* LaunchScreen.storyboard */; };
+		BA44C32C2C74AEFC0039181B /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA44C32B2C74AEFC0039181B /* AuthView.swift */; };
+		BA44C32E2C74AF640039181B /* AuthViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA44C32D2C74AF640039181B /* AuthViewPresenter.swift */; };
+		BA44C3312C74B05D0039181B /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA44C3302C74B05D0039181B /* Builder.swift */; };
+		BA44C3342C74B1A00039181B /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA44C3332C74B1A00039181B /* FirebaseManager.swift */; };
+		BA44C3372C74B32C0039181B /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA44C3362C74B32C0039181B /* TextField.swift */; };
+		BA44C33A2C74B68B0039181B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA44C33C2C74B68B0039181B /* Localizable.strings */; };
+		BA44C3422C74B8A70039181B /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA44C3412C74B8A70039181B /* String+Extension.swift */; };
+		BA44C3442C74C2020039181B /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA44C3432C74C2020039181B /* UIView + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA0939A82C74C99E00F67EE3 /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
+		BA0939B12C74D28A00F67EE3 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		BA0939B32C74D2D300F67EE3 /* RegistrationViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewPresenter.swift; sourceTree = "<group>"; };
+		BA0939B62C74DA2000F67EE3 /* WindowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowManager.swift; sourceTree = "<group>"; };
+		BA0939BB2C74DC6000F67EE3 /* NSNotification.Name + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNotification.Name + Extension.swift"; sourceTree = "<group>"; };
 		BA44C3092C74A82F0039181B /* ChatMessanger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatMessanger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA44C30C2C74A82F0039181B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA44C30E2C74A82F0039181B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BA44C3102C74A82F0039181B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BA44C3132C74A82F0039181B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA44C3152C74A8310039181B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA44C3182C74A8310039181B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA44C31A2C74A8310039181B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA44C32B2C74AEFC0039181B /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		BA44C32D2C74AF640039181B /* AuthViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewPresenter.swift; sourceTree = "<group>"; };
+		BA44C3302C74B05D0039181B /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		BA44C3332C74B1A00039181B /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		BA44C3362C74B32C0039181B /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		BA44C33B2C74B68B0039181B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BA44C33E2C74B6A60039181B /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BA44C33F2C74B6CD0039181B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		BA44C3412C74B8A70039181B /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		BA44C3432C74C2020039181B /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +61,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA0939A72C74C98400F67EE3 /* WhiteButton */ = {
+			isa = PBXGroup;
+			children = (
+				BA0939A82C74C99E00F67EE3 /* AppButton.swift */,
+			);
+			path = WhiteButton;
+			sourceTree = "<group>";
+		};
+		BA0939AA2C74CEEB00F67EE3 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				BA0939A72C74C98400F67EE3 /* WhiteButton */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		BA0939AE2C74D24A00F67EE3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA0939B12C74D28A00F67EE3 /* RegistrationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BA0939AF2C74D25700F67EE3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BA0939B02C74D25C00F67EE3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BA0939B32C74D2D300F67EE3 /* RegistrationViewPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BA0939B52C74DA0E00F67EE3 /* WindowManager */ = {
+			isa = PBXGroup;
+			children = (
+				BA0939B62C74DA2000F67EE3 /* WindowManager.swift */,
+			);
+			path = WindowManager;
+			sourceTree = "<group>";
+		};
+		BA0939B82C74DB2500F67EE3 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				BA44C3432C74C2020039181B /* UIView + Extension.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		BA0939B92C74DB3C00F67EE3 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				BA44C3412C74B8A70039181B /* String+Extension.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		BA0939BA2C74DC2700F67EE3 /* NSNotification.Name */ = {
+			isa = PBXGroup;
+			children = (
+				BA0939BB2C74DC6000F67EE3 /* NSNotification.Name + Extension.swift */,
+			);
+			path = NSNotification.Name;
+			sourceTree = "<group>";
+		};
 		BA44C3002C74A82F0039181B = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +151,147 @@
 		BA44C30B2C74A82F0039181B /* ChatMessanger */ = {
 			isa = PBXGroup;
 			children = (
-				BA44C30C2C74A82F0039181B /* AppDelegate.swift */,
-				BA44C30E2C74A82F0039181B /* SceneDelegate.swift */,
-				BA44C3102C74A82F0039181B /* ViewController.swift */,
-				BA44C3122C74A82F0039181B /* Main.storyboard */,
+				BA44C32F2C74B0470039181B /* Builder */,
+				BA44C3242C74AD490039181B /* Helpers */,
+				BA44C3232C74AD290039181B /* Common */,
+				BA44C3202C74AD010039181B /* Module */,
 				BA44C3152C74A8310039181B /* Assets.xcassets */,
 				BA44C3172C74A8310039181B /* LaunchScreen.storyboard */,
 				BA44C31A2C74A8310039181B /* Info.plist */,
+				BA44C33C2C74B68B0039181B /* Localizable.strings */,
 			);
 			path = ChatMessanger;
+			sourceTree = "<group>";
+		};
+		BA44C3202C74AD010039181B /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				BA44C3222C74AD0E0039181B /* App */,
+				BA44C3212C74AD080039181B /* Login */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		BA44C3212C74AD080039181B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BA44C3272C74AE0B0039181B /* RegistrationView */,
+				BA44C3262C74ADFB0039181B /* AuthView */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		BA44C3222C74AD0E0039181B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BA44C3252C74ADED0039181B /* TabBar */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BA44C3232C74AD290039181B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BA44C30C2C74A82F0039181B /* AppDelegate.swift */,
+				BA44C30E2C74A82F0039181B /* SceneDelegate.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		BA44C3242C74AD490039181B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BA0939B52C74DA0E00F67EE3 /* WindowManager */,
+				BA0939AA2C74CEEB00F67EE3 /* Buttons */,
+				BA44C3402C74B8870039181B /* Extensions */,
+				BA44C3352C74B30A0039181B /* TextFiled */,
+				BA44C3322C74B1740039181B /* FirebaseManager */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BA44C3252C74ADED0039181B /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		BA44C3262C74ADFB0039181B /* AuthView */ = {
+			isa = PBXGroup;
+			children = (
+				BA44C32A2C74AEA60039181B /* Presenter */,
+				BA44C3292C74AEA00039181B /* Model */,
+				BA44C3282C74AE9A0039181B /* View */,
+			);
+			path = AuthView;
+			sourceTree = "<group>";
+		};
+		BA44C3272C74AE0B0039181B /* RegistrationView */ = {
+			isa = PBXGroup;
+			children = (
+				BA0939B02C74D25C00F67EE3 /* Presenter */,
+				BA0939AF2C74D25700F67EE3 /* Model */,
+				BA0939AE2C74D24A00F67EE3 /* View */,
+			);
+			path = RegistrationView;
+			sourceTree = "<group>";
+		};
+		BA44C3282C74AE9A0039181B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA44C32B2C74AEFC0039181B /* AuthView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BA44C3292C74AEA00039181B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BA44C32A2C74AEA60039181B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BA44C32D2C74AF640039181B /* AuthViewPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BA44C32F2C74B0470039181B /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				BA44C3302C74B05D0039181B /* Builder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		BA44C3322C74B1740039181B /* FirebaseManager */ = {
+			isa = PBXGroup;
+			children = (
+				BA44C3332C74B1A00039181B /* FirebaseManager.swift */,
+			);
+			path = FirebaseManager;
+			sourceTree = "<group>";
+		};
+		BA44C3352C74B30A0039181B /* TextFiled */ = {
+			isa = PBXGroup;
+			children = (
+				BA44C3362C74B32C0039181B /* TextField.swift */,
+			);
+			path = TextFiled;
+			sourceTree = "<group>";
+		};
+		BA44C3402C74B8870039181B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BA0939BA2C74DC2700F67EE3 /* NSNotification.Name */,
+				BA0939B92C74DB3C00F67EE3 /* String */,
+				BA0939B82C74DB2500F67EE3 /* UIView */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,11 +331,12 @@
 			};
 			buildConfigurationList = BA44C3042C74A82F0039181B /* Build configuration list for PBXProject "ChatMessanger" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = ru;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = BA44C3002C74A82F0039181B;
 			productRefGroup = BA44C30A2C74A82F0039181B /* Products */;
@@ -126,8 +354,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA44C3192C74A8310039181B /* LaunchScreen.storyboard in Resources */,
+				BA44C33A2C74B68B0039181B /* Localizable.strings in Resources */,
 				BA44C3162C74A8310039181B /* Assets.xcassets in Resources */,
-				BA44C3142C74A82F0039181B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,29 +366,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA44C3112C74A82F0039181B /* ViewController.swift in Sources */,
+				BA0939B22C74D28A00F67EE3 /* RegistrationView.swift in Sources */,
+				BA44C3422C74B8A70039181B /* String+Extension.swift in Sources */,
+				BA44C3342C74B1A00039181B /* FirebaseManager.swift in Sources */,
 				BA44C30D2C74A82F0039181B /* AppDelegate.swift in Sources */,
+				BA0939B72C74DA2000F67EE3 /* WindowManager.swift in Sources */,
+				BA0939B42C74D2D300F67EE3 /* RegistrationViewPresenter.swift in Sources */,
+				BA44C32C2C74AEFC0039181B /* AuthView.swift in Sources */,
+				BA0939BC2C74DC6000F67EE3 /* NSNotification.Name + Extension.swift in Sources */,
+				BA44C3372C74B32C0039181B /* TextField.swift in Sources */,
+				BA44C32E2C74AF640039181B /* AuthViewPresenter.swift in Sources */,
 				BA44C30F2C74A82F0039181B /* SceneDelegate.swift in Sources */,
+				BA44C3312C74B05D0039181B /* Builder.swift in Sources */,
+				BA44C3442C74C2020039181B /* UIView + Extension.swift in Sources */,
+				BA0939A92C74C99E00F67EE3 /* AppButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BA44C3122C74A82F0039181B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BA44C3132C74A82F0039181B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BA44C3172C74A8310039181B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				BA44C3182C74A8310039181B /* Base */,
+				BA44C33F2C74B6CD0039181B /* en */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BA44C33C2C74B68B0039181B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA44C33B2C74B68B0039181B /* en */,
+				BA44C33E2C74B6A60039181B /* ru */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -171,6 +412,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -234,6 +476,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -296,7 +539,6 @@
 				INFOPLIST_FILE = ChatMessanger/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -323,7 +565,6 @@
 				INFOPLIST_FILE = ChatMessanger/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  ChatMessanger
+
+  Created by Ivan Tulin on 20.08.2024.
+  
+*/
+
+"authTitleLabel" = "Авторизация";
+"passwordPlaceholder" = "Пароль";
+"authButtonText" = "Войти";
+"registrationButtonText" = "Регистрация";
+
+"registrationTitleLabel" = "Регистрация";
+"namePlaceholder" = "Регистрация";
