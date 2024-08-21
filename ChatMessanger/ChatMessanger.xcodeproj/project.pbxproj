@@ -17,6 +17,14 @@
 		BA41DB402C75E3100089068A /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA41DB3F2C75E3100089068A /* UserListView.swift */; };
 		BA41DB422C75E3950089068A /* UserListViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA41DB412C75E3950089068A /* UserListViewPresenter.swift */; };
 		BA41DB492C75E6160089068A /* MessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA41DB482C75E6160089068A /* MessageListView.swift */; };
+		BA41DB4B2C75E7760089068A /* MessageViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA41DB4A2C75E7760089068A /* MessageViewPresenter.swift */; };
+		BA41DB4D2C75EE510089068A /* ChatUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA41DB4C2C75EE510089068A /* ChatUser.swift */; };
+		BA41DB4F2C75F2C10089068A /* ChatItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA41DB4E2C75F2C10089068A /* ChatItem.swift */; };
+		BA41DB552C75F92C0089068A /* MessangerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA41DB542C75F92C0089068A /* MessangerView.swift */; };
+		BA41DB572C75F9690089068A /* MessangerViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA41DB562C75F9690089068A /* MessangerViewPresenter.swift */; };
+		BA41DB5A2C75FA3B0089068A /* MessageKit in Frameworks */ = {isa = PBXBuildFile; productRef = BA41DB592C75FA3A0089068A /* MessageKit */; };
+		BA41DB5D2C75FCFA0089068A /* Sender.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA41DB5C2C75FCFA0089068A /* Sender.swift */; };
+		BA41DB5F2C75FD200089068A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA41DB5E2C75FD200089068A /* Message.swift */; };
 		BA44C30D2C74A82F0039181B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA44C30C2C74A82F0039181B /* AppDelegate.swift */; };
 		BA44C30F2C74A82F0039181B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA44C30E2C74A82F0039181B /* SceneDelegate.swift */; };
 		BA44C3162C74A8310039181B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA44C3152C74A8310039181B /* Assets.xcassets */; };
@@ -42,6 +50,13 @@
 		BA41DB3F2C75E3100089068A /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
 		BA41DB412C75E3950089068A /* UserListViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewPresenter.swift; sourceTree = "<group>"; };
 		BA41DB482C75E6160089068A /* MessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListView.swift; sourceTree = "<group>"; };
+		BA41DB4A2C75E7760089068A /* MessageViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewPresenter.swift; sourceTree = "<group>"; };
+		BA41DB4C2C75EE510089068A /* ChatUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatUser.swift; sourceTree = "<group>"; };
+		BA41DB4E2C75F2C10089068A /* ChatItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatItem.swift; sourceTree = "<group>"; };
+		BA41DB542C75F92C0089068A /* MessangerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessangerView.swift; sourceTree = "<group>"; };
+		BA41DB562C75F9690089068A /* MessangerViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessangerViewPresenter.swift; sourceTree = "<group>"; };
+		BA41DB5C2C75FCFA0089068A /* Sender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sender.swift; sourceTree = "<group>"; };
+		BA41DB5E2C75FD200089068A /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		BA44C3092C74A82F0039181B /* ChatMessanger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatMessanger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA44C30C2C74A82F0039181B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA44C30E2C74A82F0039181B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA41DB5A2C75FA3B0089068A /* MessageKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +211,7 @@
 		BA41DB3D2C75E2970089068A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BA41DB4C2C75EE510089068A /* ChatUser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -210,6 +227,9 @@
 		BA41DB432C75E4CB0089068A /* Messanger */ = {
 			isa = PBXGroup;
 			children = (
+				BA41DB532C75F8FC0089068A /* Presenter */,
+				BA41DB522C75F8F60089068A /* Model */,
+				BA41DB502C75F8E90089068A /* View */,
 			);
 			path = Messanger;
 			sourceTree = "<group>";
@@ -235,6 +255,7 @@
 		BA41DB462C75E4FA0089068A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BA41DB4E2C75F2C10089068A /* ChatItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -242,8 +263,42 @@
 		BA41DB472C75E4FF0089068A /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				BA41DB4A2C75E7760089068A /* MessageViewPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BA41DB502C75F8E90089068A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA41DB542C75F92C0089068A /* MessangerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BA41DB522C75F8F60089068A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BA41DB5B2C75FCE00089068A /* DataModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BA41DB532C75F8FC0089068A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BA41DB562C75F9690089068A /* MessangerViewPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BA41DB5B2C75FCE00089068A /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				BA41DB5C2C75FCFA0089068A /* Sender.swift */,
+				BA41DB5E2C75FD200089068A /* Message.swift */,
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 		BA44C3002C74A82F0039181B = {
@@ -429,6 +484,9 @@
 			dependencies = (
 			);
 			name = ChatMessanger;
+			packageProductDependencies = (
+				BA41DB592C75FA3A0089068A /* MessageKit */,
+			);
 			productName = ChatMessanger;
 			productReference = BA44C3092C74A82F0039181B /* ChatMessanger.app */;
 			productType = "com.apple.product-type.application";
@@ -458,6 +516,9 @@
 				ru,
 			);
 			mainGroup = BA44C3002C74A82F0039181B;
+			packageReferences = (
+				BA41DB582C75FA3A0089068A /* XCRemoteSwiftPackageReference "MessageKit" */,
+			);
 			productRefGroup = BA44C30A2C74A82F0039181B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -485,12 +546,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA41DB4F2C75F2C10089068A /* ChatItem.swift in Sources */,
 				BA41DB402C75E3100089068A /* UserListView.swift in Sources */,
+				BA41DB4B2C75E7760089068A /* MessageViewPresenter.swift in Sources */,
 				BA0939B22C74D28A00F67EE3 /* RegistrationView.swift in Sources */,
 				BA41DB422C75E3950089068A /* UserListViewPresenter.swift in Sources */,
 				BA44C3422C74B8A70039181B /* String+Extension.swift in Sources */,
 				BA44C3342C74B1A00039181B /* FirebaseManager.swift in Sources */,
 				BA41DB392C75DE2E0089068A /* TabBarViewPresenter.swift in Sources */,
+				BA41DB552C75F92C0089068A /* MessangerView.swift in Sources */,
+				BA41DB5F2C75FD200089068A /* Message.swift in Sources */,
 				BA44C30D2C74A82F0039181B /* AppDelegate.swift in Sources */,
 				BA0939B72C74DA2000F67EE3 /* WindowManager.swift in Sources */,
 				BA0939B42C74D2D300F67EE3 /* RegistrationViewPresenter.swift in Sources */,
@@ -501,9 +566,12 @@
 				BA44C30F2C74A82F0039181B /* SceneDelegate.swift in Sources */,
 				BA44C3312C74B05D0039181B /* Builder.swift in Sources */,
 				BA41DB492C75E6160089068A /* MessageListView.swift in Sources */,
+				BA41DB5D2C75FCFA0089068A /* Sender.swift in Sources */,
 				BA44C3442C74C2020039181B /* UIView + Extension.swift in Sources */,
 				BA41DB372C75DDC70089068A /* TabBarView.swift in Sources */,
 				BA0939A92C74C99E00F67EE3 /* AppButton.swift in Sources */,
+				BA41DB4D2C75EE510089068A /* ChatUser.swift in Sources */,
+				BA41DB572C75F9690089068A /* MessangerViewPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -726,6 +794,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BA41DB582C75FA3A0089068A /* XCRemoteSwiftPackageReference "MessageKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MessageKit/MessageKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BA41DB592C75FA3A0089068A /* MessageKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA41DB582C75FA3A0089068A /* XCRemoteSwiftPackageReference "MessageKit" */;
+			productName = MessageKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BA44C3012C74A82F0039181B /* Project object */;
 }

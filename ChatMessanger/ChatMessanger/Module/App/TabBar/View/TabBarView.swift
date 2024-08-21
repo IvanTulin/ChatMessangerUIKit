@@ -28,7 +28,7 @@ class TabBarView: UITabBarController {
 
 extension TabBarView: TabBarViewProtocol {
     func setControllers(views: [UIViewController]) {
-        tabBarController?.setViewControllers(views, animated: true)
+        setViewControllers(views, animated: true)
     }
     
 }

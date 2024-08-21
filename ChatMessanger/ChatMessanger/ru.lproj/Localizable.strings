@@ -13,3 +13,6 @@
 
 "registrationTitleLabel" = "Регистрация";
 "namePlaceholder" = "Регистрация";
+
+"tabUsers" = "Пользователи";
+"tabMessages" = "Сообщения";
