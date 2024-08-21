@@ -17,9 +17,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
-        let authView = Builder.getAuthView()
-        let regView = Builder.getRegistrationView()
-        window?.rootViewController = authView
+//        let authView = Builder.getAuthView()
+//        let regView = Builder.getRegistrationView()
+        let tabBarView = Builder.getTabBarView()
+        window?.rootViewController = tabBarView
         window?.makeKeyAndVisible()
         
     }
@@ -31,7 +32,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         switch state {
         case .app:
-            print("")
+            window?.rootViewController = Builder.getTabBarView()
         case .auth:
             window?.rootViewController = Builder.getAuthView()
         case .registration:

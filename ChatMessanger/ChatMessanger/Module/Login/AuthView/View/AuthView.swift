@@ -75,9 +75,9 @@ class AuthView: UIViewController {
             authButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
             
             bottomButton.heightAnchor.constraint(equalToConstant: 30),
-            bottomButton.topAnchor.constraint(equalTo: authButton.bottomAnchor, constant: 80),
             bottomButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
             bottomButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
+            bottomButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10),
 
         ])
     }

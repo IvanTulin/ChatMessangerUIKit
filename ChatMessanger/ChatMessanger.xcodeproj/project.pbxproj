@@ -12,6 +12,11 @@
 		BA0939B42C74D2D300F67EE3 /* RegistrationViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0939B32C74D2D300F67EE3 /* RegistrationViewPresenter.swift */; };
 		BA0939B72C74DA2000F67EE3 /* WindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0939B62C74DA2000F67EE3 /* WindowManager.swift */; };
 		BA0939BC2C74DC6000F67EE3 /* NSNotification.Name + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0939BB2C74DC6000F67EE3 /* NSNotification.Name + Extension.swift */; };
+		BA41DB372C75DDC70089068A /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA41DB362C75DDC70089068A /* TabBarView.swift */; };
+		BA41DB392C75DE2E0089068A /* TabBarViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA41DB382C75DE2E0089068A /* TabBarViewPresenter.swift */; };
+		BA41DB402C75E3100089068A /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA41DB3F2C75E3100089068A /* UserListView.swift */; };
+		BA41DB422C75E3950089068A /* UserListViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA41DB412C75E3950089068A /* UserListViewPresenter.swift */; };
+		BA41DB492C75E6160089068A /* MessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA41DB482C75E6160089068A /* MessageListView.swift */; };
 		BA44C30D2C74A82F0039181B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA44C30C2C74A82F0039181B /* AppDelegate.swift */; };
 		BA44C30F2C74A82F0039181B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA44C30E2C74A82F0039181B /* SceneDelegate.swift */; };
 		BA44C3162C74A8310039181B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA44C3152C74A8310039181B /* Assets.xcassets */; };
@@ -32,6 +37,11 @@
 		BA0939B32C74D2D300F67EE3 /* RegistrationViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewPresenter.swift; sourceTree = "<group>"; };
 		BA0939B62C74DA2000F67EE3 /* WindowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowManager.swift; sourceTree = "<group>"; };
 		BA0939BB2C74DC6000F67EE3 /* NSNotification.Name + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNotification.Name + Extension.swift"; sourceTree = "<group>"; };
+		BA41DB362C75DDC70089068A /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		BA41DB382C75DE2E0089068A /* TabBarViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewPresenter.swift; sourceTree = "<group>"; };
+		BA41DB3F2C75E3100089068A /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		BA41DB412C75E3950089068A /* UserListViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewPresenter.swift; sourceTree = "<group>"; };
+		BA41DB482C75E6160089068A /* MessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListView.swift; sourceTree = "<group>"; };
 		BA44C3092C74A82F0039181B /* ChatMessanger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatMessanger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA44C30C2C74A82F0039181B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA44C30E2C74A82F0039181B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +142,110 @@
 			path = NSNotification.Name;
 			sourceTree = "<group>";
 		};
+		BA41DB332C75DD5F0089068A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA41DB362C75DDC70089068A /* TabBarView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BA41DB342C75DD690089068A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BA41DB352C75DD6F0089068A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BA41DB382C75DE2E0089068A /* TabBarViewPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BA41DB3A2C75E27B0089068A /* UserList */ = {
+			isa = PBXGroup;
+			children = (
+				BA41DB3E2C75E29D0089068A /* Presenter */,
+				BA41DB3D2C75E2970089068A /* Model */,
+				BA41DB3C2C75E2920089068A /* View */,
+			);
+			path = UserList;
+			sourceTree = "<group>";
+		};
+		BA41DB3B2C75E28C0089068A /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				BA41DB442C75E4E80089068A /* Message */,
+				BA41DB432C75E4CB0089068A /* Messanger */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		BA41DB3C2C75E2920089068A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA41DB3F2C75E3100089068A /* UserListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BA41DB3D2C75E2970089068A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BA41DB3E2C75E29D0089068A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BA41DB412C75E3950089068A /* UserListViewPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BA41DB432C75E4CB0089068A /* Messanger */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Messanger;
+			sourceTree = "<group>";
+		};
+		BA41DB442C75E4E80089068A /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				BA41DB472C75E4FF0089068A /* Presenter */,
+				BA41DB462C75E4FA0089068A /* Model */,
+				BA41DB452C75E4F50089068A /* View */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		BA41DB452C75E4F50089068A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA41DB482C75E6160089068A /* MessageListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BA41DB462C75E4FA0089068A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BA41DB472C75E4FF0089068A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		BA44C3002C74A82F0039181B = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +298,8 @@
 		BA44C3222C74AD0E0039181B /* App */ = {
 			isa = PBXGroup;
 			children = (
+				BA41DB3B2C75E28C0089068A /* Messages */,
+				BA41DB3A2C75E27B0089068A /* UserList */,
 				BA44C3252C74ADED0039181B /* TabBar */,
 			);
 			path = App;
@@ -213,6 +329,9 @@
 		BA44C3252C74ADED0039181B /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				BA41DB352C75DD6F0089068A /* Presenter */,
+				BA41DB342C75DD690089068A /* Model */,
+				BA41DB332C75DD5F0089068A /* View */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -366,9 +485,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA41DB402C75E3100089068A /* UserListView.swift in Sources */,
 				BA0939B22C74D28A00F67EE3 /* RegistrationView.swift in Sources */,
+				BA41DB422C75E3950089068A /* UserListViewPresenter.swift in Sources */,
 				BA44C3422C74B8A70039181B /* String+Extension.swift in Sources */,
 				BA44C3342C74B1A00039181B /* FirebaseManager.swift in Sources */,
+				BA41DB392C75DE2E0089068A /* TabBarViewPresenter.swift in Sources */,
 				BA44C30D2C74A82F0039181B /* AppDelegate.swift in Sources */,
 				BA0939B72C74DA2000F67EE3 /* WindowManager.swift in Sources */,
 				BA0939B42C74D2D300F67EE3 /* RegistrationViewPresenter.swift in Sources */,
@@ -378,7 +500,9 @@
 				BA44C32E2C74AF640039181B /* AuthViewPresenter.swift in Sources */,
 				BA44C30F2C74A82F0039181B /* SceneDelegate.swift in Sources */,
 				BA44C3312C74B05D0039181B /* Builder.swift in Sources */,
+				BA41DB492C75E6160089068A /* MessageListView.swift in Sources */,
 				BA44C3442C74C2020039181B /* UIView + Extension.swift in Sources */,
+				BA41DB372C75DDC70089068A /* TabBarView.swift in Sources */,
 				BA0939A92C74C99E00F67EE3 /* AppButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
