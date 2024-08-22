@@ -22,9 +22,9 @@
 		BA41DB4F2C75F2C10089068A /* ChatItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA41DB4E2C75F2C10089068A /* ChatItem.swift */; };
 		BA41DB552C75F92C0089068A /* MessangerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA41DB542C75F92C0089068A /* MessangerView.swift */; };
 		BA41DB572C75F9690089068A /* MessangerViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA41DB562C75F9690089068A /* MessangerViewPresenter.swift */; };
-		BA41DB5A2C75FA3B0089068A /* MessageKit in Frameworks */ = {isa = PBXBuildFile; productRef = BA41DB592C75FA3A0089068A /* MessageKit */; };
 		BA41DB5D2C75FCFA0089068A /* Sender.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA41DB5C2C75FCFA0089068A /* Sender.swift */; };
 		BA41DB5F2C75FD200089068A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA41DB5E2C75FD200089068A /* Message.swift */; };
+		BA41DB622C76240C0089068A /* MessageKit in Frameworks */ = {isa = PBXBuildFile; productRef = BA41DB612C76240C0089068A /* MessageKit */; };
 		BA44C30D2C74A82F0039181B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA44C30C2C74A82F0039181B /* AppDelegate.swift */; };
 		BA44C30F2C74A82F0039181B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA44C30E2C74A82F0039181B /* SceneDelegate.swift */; };
 		BA44C3162C74A8310039181B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA44C3152C74A8310039181B /* Assets.xcassets */; };
@@ -80,7 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA41DB5A2C75FA3B0089068A /* MessageKit in Frameworks */,
+				BA41DB622C76240C0089068A /* MessageKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,7 +485,7 @@
 			);
 			name = ChatMessanger;
 			packageProductDependencies = (
-				BA41DB592C75FA3A0089068A /* MessageKit */,
+				BA41DB612C76240C0089068A /* MessageKit */,
 			);
 			productName = ChatMessanger;
 			productReference = BA44C3092C74A82F0039181B /* ChatMessanger.app */;
@@ -517,7 +517,7 @@
 			);
 			mainGroup = BA44C3002C74A82F0039181B;
 			packageReferences = (
-				BA41DB582C75FA3A0089068A /* XCRemoteSwiftPackageReference "MessageKit" */,
+				BA41DB602C76240C0089068A /* XCRemoteSwiftPackageReference "MessageKit" */,
 			);
 			productRefGroup = BA44C30A2C74A82F0039181B /* Products */;
 			projectDirPath = "";
@@ -796,7 +796,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		BA41DB582C75FA3A0089068A /* XCRemoteSwiftPackageReference "MessageKit" */ = {
+		BA41DB602C76240C0089068A /* XCRemoteSwiftPackageReference "MessageKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/MessageKit/MessageKit";
 			requirement = {
@@ -807,9 +807,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		BA41DB592C75FA3A0089068A /* MessageKit */ = {
+		BA41DB612C76240C0089068A /* MessageKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = BA41DB582C75FA3A0089068A /* XCRemoteSwiftPackageReference "MessageKit" */;
+			package = BA41DB602C76240C0089068A /* XCRemoteSwiftPackageReference "MessageKit" */;
 			productName = MessageKit;
 		};
 /* End XCSwiftPackageProductDependency section */
