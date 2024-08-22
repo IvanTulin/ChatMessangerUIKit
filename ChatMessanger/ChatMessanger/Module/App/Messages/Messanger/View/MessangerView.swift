@@ -7,6 +7,7 @@
 
 import UIKit
 import MessageKit
+import InputBarAccessoryView /// для ввода текста в чат
 
 protocol MessangerViewProtocol: AnyObject {
     
@@ -32,7 +33,23 @@ final class MessangerView: MessagesViewController {
         messagesCollectionView.messagesLayoutDelegate = self
         messagesCollectionView.messagesDisplayDelegate = self
         messagesCollectionView.reloadData()
+        /// для ввода текста в чат
+        messageInputBar.delegate = self
     }
+    
+    private func insertMessage(_ message: Message) {
+        presenter.messages.append(message)
+        messagesCollectionView.performBatchUpdates {
+            messagesCollectionView.insertSections([presenter.messages.count - 1])
+            if presenter.messages.count >= 2 {
+                messagesCollectionView.reloadSections([presenter.messages.count - 2])
+            }
+        } completion: { [weak self] _ in
+            self?.messagesCollectionView.scrollToLastItem(animated: true)
+        }
+
+    }
+    
     
 }
 
@@ -57,7 +74,6 @@ extension MessangerView: MessagesDataSource {
         presenter.messages.count
     }
     
-    
 }
 
 // MARK: - MessangerView + MessagesLayoutDelegate
@@ -70,4 +86,49 @@ extension MessangerView: MessagesLayoutDelegate {
 
 extension MessangerView: MessagesDisplayDelegate {
     
+    func cellTopLabelHeight(for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) -> CGFloat {
+        20
+    }
+    
+    /// высота для имени над сообщенем
+    func messageTopLabelHeight(for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) -> CGFloat {
+        20
+    }
+    
+    /// высота для даты над сообщенем
+    func messageBottomLabelHeight(for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) -> CGFloat {
+        20
+    }
+    
+    func backgroundColor(for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) -> UIColor {
+        message.sender.senderId == presenter.selfSender.senderId ? .systemBlue : .gray
+    }
+    
+    /// тест для имени над сообщенем
+    func messageTopLabelAttributedText(for message: MessageType, at indexPath: IndexPath) -> NSAttributedString? {
+        let name = message.sender.displayName
+        return  NSAttributedString(string: name, attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 16), NSAttributedString.Key.foregroundColor : UIColor.black])
+    }
+    
+    /// тест для даты над сообщенем
+    func messageBottomLabelAttributedText(for message: MessageType, at indexPath: IndexPath) -> NSAttributedString? {
+        let date = message.sentDate.formatted()
+        return  NSAttributedString(string: date, attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 16), NSAttributedString.Key.foregroundColor : UIColor.black])
+    }
+    
+    /// аватар отправителя сообщения
+    func configureAvatarView(_ avatarView: AvatarView, for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) {
+        avatarView.initials = String(message.sender.displayName.first ?? "-")
+        avatarView.backgroundColor = .systemGray2
+    }
+}
+
+// MARK: - MessangerView + InputBarAccessoryViewDelegate
+
+extension MessangerView: InputBarAccessoryViewDelegate {
+    func inputBar(_ inputBar: InputBarAccessoryView, didPressSendButtonWith text: String) {
+        let message = Message(sender: presenter.selfSender, messageId: UUID().uuidString, sentDate: Date(), kind: .text(text))
+        insertMessage(message)
+        inputBar.inputTextView.text = ""
+    }
 }
