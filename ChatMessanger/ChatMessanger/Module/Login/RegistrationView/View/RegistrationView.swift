@@ -25,7 +25,10 @@ class RegistrationView: UIViewController {
     private lazy var nameTextField: UITextField = TextField(filedPlaceholder: .locolize("namePlaceholder"))
     private lazy var emailTextField: UITextField = TextField(filedPlaceholder: "Email")
     private lazy var passwordTextField: UITextField = TextField(filedPlaceholder: .locolize("passwordPlaceholder "))
-    private lazy var registrationButton: UIButton = AppButton(buttonText: .locolize("registrationButtonText")) {
+    private lazy var registrationButton: UIButton = AppButton(buttonText: .locolize("registrationButtonText")) { [weak self] in
+        let userInfo = UserInfo(email: self?.emailTextField.text ?? "", password: self?.passwordTextField.text ?? "", name: self?.nameTextField.text ?? "")
+        self?.presenter.sendToRegist(userInfo: userInfo)
+        
         print(#function)
     }
     private lazy var bottomButton: UIButton = AppButton(buttonText: .locolize("authTitleLabel"), buttonColor: .clear, titleColor: .white) {

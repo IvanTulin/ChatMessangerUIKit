@@ -24,8 +24,12 @@ class AuthView: UIViewController {
     
     private lazy var emailTextField: UITextField = TextField(filedPlaceholder: "Email")
     private lazy var passwordTextField: UITextField = TextField(filedPlaceholder: .locolize("passwordPlaceholder "))
-    private lazy var authButton: UIButton = AppButton(buttonText: .locolize("authButtonText")) {
+    private lazy var authButton: UIButton = AppButton(buttonText: .locolize("authButtonText")) { [weak self] in
         print(#function)
+        
+        guard let self = self else { return }
+        let userInfo = UserInfo(email: emailTextField.text ?? "", password: passwordTextField.text ?? "")
+        presenter.signIn(userInfo: userInfo)
     }
     private lazy var bottomButton: UIButton = AppButton(buttonText: .locolize("registrationButtonText"), buttonColor: .clear, titleColor: .white) {
         print(#function)

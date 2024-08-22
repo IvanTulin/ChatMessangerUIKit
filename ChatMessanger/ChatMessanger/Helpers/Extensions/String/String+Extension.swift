@@ -13,8 +13,16 @@ extension String {
     }
 }
 
+// MARK: - UserInfo Keys
 extension String {
     static let state = "state"
+}
+
+// MARK: - Firebase Keys
+
+extension String {
+    static let users = "users"
+    static let conversation = "conversation"
 }
 
 extension String {

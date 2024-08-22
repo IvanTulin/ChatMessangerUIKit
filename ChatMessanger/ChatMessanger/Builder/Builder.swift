@@ -26,21 +26,21 @@ final class Builder {
         let view = TabBarView()
         let presenter = TabBarViewPresenter(view: view)
         view.presenter = presenter
-        return UINavigationController(rootViewController: view)
+        return view
     }
     
     static func getUserListView() -> UIViewController {
         let view = UserListView()
         let presenter = UserListViewPresenter(view: view)
         view.presenter = presenter
-        return view
+        return UINavigationController(rootViewController: view)
     }
     
     static func getMessageListView() -> UIViewController {
         let view = MessageListView()
         let presenter = MessageViewPresenter(view: view)
         view.presenter = presenter
-        return view
+        return UINavigationController(rootViewController: view)
     }
     
     static func getMessangerView(chatItem: ChatItem) -> UIViewController {

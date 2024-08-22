@@ -22,6 +22,9 @@ final class UserListView: UIViewController {
         return $0
     }(UITableView(frame: view.bounds, style: .insetGrouped))
     
+    lazy var signOutButton: UIBarButtonItem = UIBarButtonItem(image: .actions, style: .done, target: self, action: #selector(signOut))
+    
+    
     // MARK: - Puplic Properties
     
     var presenter: UserListViewPresenterProtocol!
@@ -32,12 +35,18 @@ final class UserListView: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .brown
         title = .locolize("tabUsers")
-        
+        navigationItem.rightBarButtonItem = signOutButton
         addSubviews() 
     }
     
+    // MARK: - Private Methods
+    
     private func addSubviews() {
         view.addSubview(tableView)
+    }
+    
+    @objc private func signOut() {
+        FirebaseManager.shared.signOut()
     }
     
 }

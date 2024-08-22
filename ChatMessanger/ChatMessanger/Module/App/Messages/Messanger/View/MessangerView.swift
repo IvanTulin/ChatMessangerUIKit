@@ -24,7 +24,9 @@ final class MessangerView: MessagesViewController {
         super.viewDidLoad()
         showMessageTimestampOnSwipeLeft = true
         messagerSetup()
+        //hidesBottomBarWhenPushed = true
     }
+    
     
     // MARK: - Private Methods
     
