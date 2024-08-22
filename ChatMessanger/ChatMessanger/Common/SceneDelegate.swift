@@ -17,10 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
-//        let authView = Builder.getAuthView()
-//        let regView = Builder.getRegistrationView()
-        let tabBarView = Builder.getTabBarView()
-        window?.rootViewController = tabBarView
+        window?.rootViewController = FirebaseManager.shared.isLogin() ? Builder.getTabBarView() : Builder.getAuthView()
         window?.makeKeyAndVisible()
         
     }

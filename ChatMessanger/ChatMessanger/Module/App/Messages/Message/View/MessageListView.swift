@@ -30,12 +30,15 @@ final class MessageListView: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .lightGray
         title = .locolize("tabMessages")
-        
         addSubviews()
     }
     
     override func viewWillAppear(_ animated: Bool) {
-       // tabBarController?.tabBar.isHidden = false
+        hidesBottomBarWhenPushed = true
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        hidesBottomBarWhenPushed = false
     }
     
     private func addSubviews() {

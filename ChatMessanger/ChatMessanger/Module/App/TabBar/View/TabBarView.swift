@@ -12,6 +12,10 @@ protocol TabBarViewProtocol: AnyObject {
 }
 
 class TabBarView: UITabBarController {
+    // MARK: - Visual Components
+    
+    
+    
     // MARK: - Puplic Properties
     
     var presenter: TabBarViewPresenter!
@@ -22,7 +26,6 @@ class TabBarView: UITabBarController {
         super.viewDidLoad()
         view.backgroundColor = .white
     }
-    
 
 }
 
